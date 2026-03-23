@@ -1,0 +1,180 @@
+
+.cabecalho-contato {
+    display: flex;
+    margin-top: 90px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container-div-contato {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+    gap: 250px;
+    margin-top: 70px;
+}
+
+.container-div-esquerdo {
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container-div-esquerdo h2{
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+
+
+.div-email, .div-telefone, .div-localizacao {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+
+
+.div-email img, .div-telefone img, .div-localizacao img {
+    width: 25px;
+    height: 25px;
+}
+
+.link-email, .link-telefone, .link-localizacao{
+
+    display: block;
+    margin-top: 10px;
+    color: #525252;
+    text-decoration: none;
+    
+
+}
+
+
+.container-div-direito {
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-div-direito h2{
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    
+}
+
+label{
+    font-weight: 600;
+}
+
+.nome-input, .email-input, .mensagem-textarea, .button-enviar {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+ .mensagem-textarea {
+    height: 120px;
+    resize: none;
+ }
+
+
+
+.button-enviar {
+    background-color: #000000;
+    color:#ffffff;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.button-enviar img {
+    width: 15px;
+    height: 15px;
+
+}
+
+.link-email:hover, .link-telefone:hover {
+    color: #000000;
+   
+}
+
+.button-enviar:hover {
+   opacity: 0.8;
+}
+
+.button-enviar:active {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+
+    .cabecalho-contato {
+        margin-top: 150px;
+        
+    }
+    
+    .cabecalho-contato h1 {
+        font-size: 20px;
+    }
+
+    .cabecalho-contato p {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .container-div-contato {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .container-div-contato h2{
+        font-size: 20px;
+    }
+
+    .container-div-esquerdo {
+        margin-top: 60px;
+        
+    }
+
+    .container-div-direito {
+        margin-top: 60px;
+    }
+
+    .nome-input, .email-input, .mensagem-textarea, .button-enviar {
+        width: 100%;
+    }
+
+    .link-email, .link-telefone, .link-localizacao {
+        font-size: 14px;
+    }
+
+    .div-email img, .div-telefone img, .div-localizacao img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .paragrafo-email, .paragrafo-telefone, .paragrafo-localizacao {
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,192 @@
+.container-h1-projeto {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projetos {
+    font-size: 50px;
+    color: #000000;
+}
+
+.container-h1-projeto p {
+    font-size: 20px;
+    color: #66666e;
+    margin-top: 15px;
+}
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.projeto-1,.projeto-2,.projeto-3,.projeto-4,.projeto-5,.projeto-6 {
+
+    width: 400px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.img-projeto {
+    width: 100%;
+    align-self: flex-start;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.projeto-1 h3, .projeto-2 h3, .projeto-3 h3, .projeto-4 h3, .projeto-5 h3, .projeto-6 h3 {
+    font-size: 24px;
+    color: #161917;
+    margin-top: 15px;
+    
+}
+
+.projeto-1 p, .projeto-2 p, .projeto-3 p, .projeto-4 p, .projeto-5 p, .projeto-6 p {
+    font-size: 17px;
+    color: #66666e;
+    margin-top: 10px;
+    padding: 0 15px;
+    text-align: justify;
+    line-height: 1.3;
+    
+}
+
+.div-tec {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 55px;
+    left: 15px;
+    
+}
+.tec-js, .tec-html, .tec-css {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #161917;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #e9e9e9;
+    
+}
+
+.codigo-git {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+    display: flex;
+    font-size: 18px;
+    color: #000000;
+    align-items: center;
+}
+
+
+
+.icone-git {
+   
+    width: 40px;
+    height: 40px;
+    display: flex;
+
+
+}
+
+.site-git {
+    position: absolute;
+    bottom: 20px;
+    left: 130px;
+    text-decoration: none;
+    display: flex;
+    font-size: 18px;
+    color: #000000;
+    align-items: center;
+}
+
+.icone-site{
+    width: 40px;
+    height: 20px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+.codigo-git:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+.site-git:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 750px) {
+
+  
+    .container-projetos {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .projeto-1, .projeto-2, .projeto-3, .projeto-4, .projeto-5, .projeto-6 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-projeto {
+        height: auto;
+    }
+
+    .div-tec {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .projeto-1 p, .projeto-2 p, .projeto-3 p, .projeto-4 p, .projeto-5 p, .projeto-6 p {
+        padding: 0 10px;
+    }
+
+    .projeto-1 h3, .projeto-2 h3, .projeto-3 h3, .projeto-4 h3, .projeto-5 h3, .projeto-6 h3 {
+        margin-top: 10px;
+    }
+
+    .codigo-git, .site-git {
+        position: static;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+    
+
+    
+
