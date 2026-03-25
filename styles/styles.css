@@ -18,7 +18,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    min-width: 450px;
+    min-width: auto;
     border: none;
     background: #ffffff;
     z-index: 1000;
@@ -50,7 +50,9 @@ header h1{
     align-items: center;
     justify-content: center;
     margin-top: 350px;
-    min-width: 450px;
+    min-width: auto;
+    width: 100%;
+    padding: 0 20px;
     
 
 
@@ -153,9 +155,32 @@ header h1{
 }
 
 @media (max-width: 750px) {
+ 
+    main{
+        max-width: 100%;
+    }
+
+    header h1{
+        font-size: 28px;
+        margin-left: 0
+    }
+
     header {
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         padding: 10px;
+    }
+
+    .container-div-index{
+        margin-top: 250px;
+        max-width: 100%;
+    }
+
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
     .nav-link a {
@@ -177,12 +202,23 @@ header h1{
         font-size: 20px;
     }
 
-    .button-projeto-section, .button-contato-section {
-        width: 150px;
-        height: 40px;
-        font-size: 16px;
-        padding: 8px 16px;
+      .button-projeto-section, .button-contato-section {
+        width: 45%;     
+        min-width: 140px; 
+        font-size: 14px;  
+        padding: 15px 5px;
+        margin: 5px;      
+        display: inline-block;
+
     }
+
+    .button-whats{
+        margin-bottom: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+
 }
 
    
